@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Biblioteca</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Prestamo:</h1>
+
+    <div class="totalisimo">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Título</th>
+                    <th>Días estimados</th>
+                    <th>Cantidad</th>
+                    <th>Días</th>
+                </tr>
+            </thead>
+            <tbody id="lista"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Cantidad de días del prestamo:</td>
+                    <td id="totDias"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+
+
+    <div style="text-align:center;">
+    <h2>Zona de envío</h2>
+
+    <div>
+        <input type="radio" id="montevideo" value="2" name="envio" checked="" required="">
+        <label for="montevideo">Montevideo: 2 días</label> <br>
+
+        <input type="radio" id="sur" value="4" name="envio" required="">
+        <label for="sur">Sur de Río Negro: 4 días</label> <br>
+
+        <input type="radio" id="norte" value="6" name="envio" required="">
+        <label for="norte">Norte de Río Negro: 6 días</label> <br>
+    </div>
+
+</div>
+
+    <div id="calculoEnvio"></div>
+
+    <script src="scripts/prestamo.js"></script>
+    <script src="scripts/init.js"></script>
+    
+</body>
+</html>
+
